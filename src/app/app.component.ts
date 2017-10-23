@@ -15,5 +15,5 @@ export class AppComponent {
   arr = ["primero", "segundo", "tercero"];
 
   isTrue = true;
-  myName = "Jacobo";
+  myName = "Jacob";
 }

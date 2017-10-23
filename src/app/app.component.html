@@ -21,6 +21,8 @@ Del primer componente de prueba
 
 <router-outlet></router-outlet> -->
 
+
+<!-- Comenzando con condiciones y templates
 <div class="elem">
   <h2>Testing Data Bind:</h2>
   <p>
@@ -37,7 +39,7 @@ Del primer componente de prueba
 </div>
 
 <!-- Mirar las funciones disponibles en la api, aquí
-se muestran algunos ejemplos de funciones sencillas -->
+se muestran algunos ejemplos de funciones sencillas --
 <div class="elem">
   <h2>Testing Data Binding 2 Correct!:</h2>
   <li *ngFor = "let i of arr">{{i}}</li>
@@ -48,7 +50,16 @@ se muestran algunos ejemplos de funciones sencillas -->
   <p *ngIf = "isTrue">La variable es verdadera, pues, muestro esto.</p>
   <p *ngIf = "myName == 'Jacobo'; else firstTemplate">Hola Jacobo!</p>
   <ng-template #firstTemplate>¿Quién eres tú?</ng-template>
+</div> -->
+
+<div class="elem">
+  <h2>Comenzando con double templates:</h2>
+  <ng-template #JacoTemplate>Hola Jacobo</ng-template>
+  <ng-template #GenteTemplate>¿Quién eres tú?</ng-template>
+  <p *ngIf = "myName == 'Jacobo'; then JacoTemplate else GenteTemplate"></p>
 </div>
+
+
 <!--
 Tutos a ver:
 <h2>Here are some links to help you start: </h2>
