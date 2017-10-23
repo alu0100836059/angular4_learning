@@ -15,5 +15,7 @@ export class AppComponent {
   arr = ["primero", "segundo", "tercero"];
 
   isTrue = true;
-  myName = "Jacob";
+  myName = "Jacobo";
+
+  dat = new Date(1988,8,11);
 }
