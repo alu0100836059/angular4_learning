@@ -46,7 +46,8 @@ se muestran algunos ejemplos de funciones sencillas -->
 <div class="elem">
   <h2>IF a través de *ngIf = "nombre_variable"</h2>
   <p *ngIf = "isTrue">La variable es verdadera, pues, muestro esto.</p>
-  <p *ngIf = "myName == 'Jacobo' && isTrue">Hola Jacobo!</p>
+  <p *ngIf = "myName == 'Jacobo'; else firstTemplate">Hola Jacobo!</p>
+  <ng-template #firstTemplate>¿Quién eres tú?</ng-template>
 </div>
 <!--
 Tutos a ver:
