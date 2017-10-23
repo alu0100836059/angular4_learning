@@ -7,8 +7,12 @@ import { MyComponentComponent } from './my-component/my-component.component';
 import { ProductsComponent } from './products/products.component';
 import { MembersComponent } from './members/members.component';
 
+// Importando el pipe personalizado
+import { SortPipe } from './app.sort';
+
 @NgModule({
   declarations: [
+    SortPipe,
     AppComponent,
     MyComponentComponent,
     ProductsComponent,

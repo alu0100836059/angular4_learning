@@ -59,7 +59,7 @@ se muestran algunos ejemplos de funciones sencillas --
   <p *ngIf = "myName == 'Jacobo'; then JacoTemplate else GenteTemplate"></p>
 </div>
 
-<div class="elem">
+<!-- <div class="elem">
   <h2>Parte de pipes:</h2>
   <p>Mostrando en mayúsculas: {{ arr[0] | uppercase}}</p>
   <p>Mostrando en minúsculas: {{ arr[0] | lowercase}}</p>
@@ -69,6 +69,14 @@ se muestran algunos ejemplos de funciones sencillas --
   <p>Pipe date parameters shortDate: {{dat | date: "shortDate"}}</p>
   <p>Pipe date parameters longDate: {{dat | date: "longDate"}}</p>
   <p>Triple pipe: {{dat | date: "longDate" | uppercase}}</p>
+</div> -->
+
+<div class="elem">
+  <h2>Pipe personalizado:</h2>
+  <p>Ordenando ascendentemente:</p>
+  <p>{{nums | sorti: 'asc'}}</p>
+  <p>Ordenando descendentemente:</p>
+  <p>{{nums | sorti: 'desc'}}</p>
 </div>
 
 

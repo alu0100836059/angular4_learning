@@ -18,4 +18,6 @@ export class AppComponent {
   myName = "Jacobo";
 
   dat = new Date(1988,8,11);
+
+  nums = [1, 2, 5, 7, 4, 9, 3, 8, 6];
 }
