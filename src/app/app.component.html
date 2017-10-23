@@ -15,10 +15,39 @@ Del primer componente de prueba
   <p>Writing from out of my first component</p>
 </div> -->
 
+<!-- Muestra de routing con los componentes members y products
 <a routerLink="/members">Members</a>
 <a routerLink="/products">Products</a>
 
-<router-outlet></router-outlet>
+<router-outlet></router-outlet> -->
+
+<div class="elem">
+  <h2>Testing Data Bind:</h2>
+  <p>
+    {{obj.name}}
+  </p>
+</div>
+<div class="elem">
+  <h2>Testing Data Binding 2 (mala praxis):</h2>
+  <p>
+    {{arr[0]}}
+    {{arr[1]}}
+    {{arr[2]}}
+  </p>
+</div>
+
+<!-- Mirar las funciones disponibles en la api, aquí
+se muestran algunos ejemplos de funciones sencillas -->
+<div class="elem">
+  <h2>Testing Data Binding 2 Correct!:</h2>
+  <li *ngFor = "let i of arr">{{i}}</li>
+</div>
+
+<div class="elem">
+  <h2>IF a través de *ngIf = "nombre_variable"</h2>
+  <p *ngIf = "isTrue">La variable es verdadera, pues, muestro esto.</p>
+  <p *ngIf = "myName == 'Jacobo' && isTrue">Hola Jacobo!</p>
+</div>
 <!--
 Tutos a ver:
 <h2>Here are some links to help you start: </h2>
